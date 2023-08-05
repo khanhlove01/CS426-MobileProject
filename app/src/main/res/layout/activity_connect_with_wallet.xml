@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".onboarding.ConnectWithWallet">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logostartscreen"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_icon"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:layout_marginTop="20dp"/>
+    <ImageView
+        android:id="@+id/img_connectwithwallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imageconnectwithwallet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your wallet"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/img_connectwithwallet"/>
+    <TextView
+        android:id="@+id/tv_connecting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By connecting your wallet you agree to \nour terms of service and privacy policy"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_connectwithwallet"
+        android:layout_marginTop="60dp"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/white"
+        android:alpha="0.3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_below="@id/tv_connecting">
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:id="@+id/btn_metamask"
+            android:src="@drawable/custom_connectwithwallet"/>
+
+        <ImageView
+            android:layout_width="360dp"
+            android:layout_height="60dp"
+            android:id="@+id/btn_trustwallet"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/custom_connectwithwallet"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_metamask"
+        android:src="@drawable/metamask"
+        android:layout_marginTop="506dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metamask"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/img_metamask"
+        android:layout_marginTop="508dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/trustwallet"
+        android:layout_marginTop="583dp"
+        android:id="@+id/img_trustwallet"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trust Wallet"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/img_trustwallet"
+        android:layout_marginTop="585dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:text="Continue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:id="@+id/btn_continue"
+        android:layout_marginRight="25dp"/>
+    <FrameLayout
+        android:id="@+id/enter_address_fragment"
+        android:layout_marginTop="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

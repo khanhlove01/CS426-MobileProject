@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="267dp"
+    android:layout_height="420dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/secondary"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/nft_homefragment"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="227dp"
+            android:layout_height="300dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/cyball_home1"/>
+
+        <TextView
+            android:id="@+id/tv_nft_home_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nft_homefragment"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="Cybloc #28708"
+            android:textColor="@color/white" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_time"
+            android:layout_below="@+id/nft_homefragment"
+            android:layout_marginTop="19dp"
+            android:layout_marginLeft="160dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/day_left"
+            android:layout_below="@+id/nft_homefragment"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="180dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/creator"
+            android:layout_below="@+id/nft_homefragment"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="18dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_price"
+            android:layout_below="@+id/nft_homefragment"
+            android:layout_marginTop="53dp"
+            android:layout_marginLeft="152dp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

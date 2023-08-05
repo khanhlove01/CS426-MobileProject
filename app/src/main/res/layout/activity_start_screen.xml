@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".onboarding.StartScreen">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logostartscreen"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_startscreen"
+        android:textSize="41dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="All NFTs are \ncertifiably unique \nand ownable"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="330dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A credible and excellent marketplace for \nnon_fungible token"
+        android:layout_below="@+id/header_startscreen"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+    <Button
+        android:id="@+id/btn_connectwithwallet"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/blue"
+        android:text="Connect with Wallet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="650dp"
+        android:layout_marginRight="25dp"/>
+
+</RelativeLayout>

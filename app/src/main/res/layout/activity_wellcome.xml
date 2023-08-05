@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".onboarding.WellcomeActivity">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:id="@+id/wellcome_image"
+        android:src="@drawable/wellcome_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey! Welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wellcome_image"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create and Sell your NFT in 1 seconds"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wellcome_image"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/white"/>
+</RelativeLayout>
