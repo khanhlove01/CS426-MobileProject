@@ -19,6 +19,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/nft_activity_image"
                 android:src="@drawable/activity_image1"/>
 
             <LinearLayout
@@ -29,12 +30,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/nft_activity_above_name"
                     android:text="Genesis karira"
                     android:textSize="17dp"
                     android:textStyle="bold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/nft_activity_name"
                     android:text="Kakira #5533"
                     android:textColor="@color/white"
                     android:textSize="24dp"/>
@@ -99,6 +102,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/nft_activity_usdprice"
                     android:text="$153,16"
                     android:textColor="@color/white"
                     android:textSize="17dp" />
@@ -142,6 +146,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/nft_activity_fromperson"
                     android:text="Aleben"
                     android:textColor="@android:color/holo_blue_light"
                     android:textSize="17dp" />
@@ -163,6 +168,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/nft_rankings_toperson"
                     android:text="10k"
                     android:textColor="@android:color/holo_blue_light"
                     android:textSize="17dp" />

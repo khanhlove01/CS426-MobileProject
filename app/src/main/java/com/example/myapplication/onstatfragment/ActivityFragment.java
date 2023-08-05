@@ -3,6 +3,8 @@ package com.example.myapplication.onstatfragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,9 +12,14 @@ import android.view.ViewGroup;
 
 import com.example.myapplication.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ActivityFragment extends Fragment {
 
     private View view;
+    private AdapterActivity adapterActivity;
+    private RecyclerView rcv_activity;
 
     public ActivityFragment() {
         // Required empty public constructor
@@ -24,6 +31,22 @@ public class ActivityFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_activity, container, false);
 
+        // rcv
+        rcv_activity = view.findViewById(R.id.rcv_activity);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false);
+        rcv_activity.setLayoutManager(linearLayoutManager);
+
+        adapterActivity = new AdapterActivity(getContext(),getListNFTActivity());
+        rcv_activity.setAdapter(adapterActivity);
         return view;
+    }
+    private List<NFTActivityInfo> getListNFTActivity()
+    {
+        List<NFTActivityInfo> list = new ArrayList<>();
+        list.add(new NFTActivityInfo(R.drawable.activity_image1,"Genesis karira","Karira #5533",
+                "$153,16","TMK","PDL"));
+        list.add(new NFTActivityInfo(R.drawable.activity_image2,"Genesis karira","Karira #5533",
+                "$153,16","TMK","PDL"));
+        return list;
     }
 }

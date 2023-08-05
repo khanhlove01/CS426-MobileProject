@@ -19,6 +19,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/nft_rankings_sothutu"
                 android:text="01"
                 android:textColor="@color/white"
                 android:textSize="20dp"/>
@@ -26,11 +27,13 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/nft_rankings_image"
                 android:src="@drawable/profile_verified_ranking1"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/nft_rankings_namenft"
                 android:text="Bored Ape Yacht Club"
                 android:textColor="@color/white"
                 android:textSize="20dp"/>
@@ -86,6 +89,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/nft_rankings_24h_change"
                     android:text="-75.00%"
                     android:textColor="@android:color/holo_red_dark"
                     android:textSize="17dp"
@@ -116,6 +120,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:id="@+id/nft_rankings_floor_price"
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="30dp"
                     android:layout_toRightOf="@id/logo_eth_floor_price"
