@@ -13,6 +13,24 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".mywaitingbid.WaitingBid"
+            android:exported="false" />
+        <activity
+            android:name=".onplacebid.PlaceBidSuccessfully"
+            android:exported="false" />
+        <activity
+            android:name=".onplacebid.BidDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onplacebid.KarafuruProfile"
+            android:exported="false" />
+        <activity
+            android:name=".onplacebid.ItemNFTPreviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".onplacebid.ItemNFTActivity111"
+            android:exported="false" />
+        <activity
             android:name=".onboarding.WellcomeActivity"
             android:exported="false" />
         <activity

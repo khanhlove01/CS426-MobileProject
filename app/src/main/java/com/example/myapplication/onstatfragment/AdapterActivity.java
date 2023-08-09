@@ -40,7 +40,7 @@ public class AdapterActivity extends RecyclerView.Adapter<AdapterActivity.Activi
         holder.imageViewNFTActivity.setImageResource(nftActivityInfo.getNFTActivityImage());
         holder.textViewAboveName.setText(nftActivityInfo.getNFTActivityAboveName());
         holder.textViewName.setText(nftActivityInfo.getNFTActivityName());
-        holder.textViewFromPerson.setText(nftActivityInfo.getNFTPrice());
+        holder.textViewFloorPrice.setText(nftActivityInfo.getNFTPrice());
         holder.textViewFromPerson.setText(nftActivityInfo.getNFTFromPerson());
         holder.textViewToPerson.setText(nftActivityInfo.getNFTToPerson());
     }

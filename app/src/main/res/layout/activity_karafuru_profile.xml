@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".onplacebid.KarafuruProfile">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banner"
+        android:id="@+id/banner"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ellipse15"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="140dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_verified"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="217dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_world"
+        android:id="@+id/icon_world_profile"
+        android:layout_below="@id/banner"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="30dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_toRightOf="@id/icon_world_profile"
+        android:src="@drawable/icon_insta"
+        android:id="@+id/icon_insta_profile"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_toRightOf="@id/icon_insta_profile"
+        android:src="@drawable/icon_twitter"
+        android:id="@+id/icon_twitter_profile"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_toRightOf="@+id/icon_twitter_profile"
+        android:src="@drawable/icon_discord"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karafuru"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="45dp"
+        android:id="@+id/profile_name_karafuru"
+        android:layout_below="@id/icon_world_profile"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_name_karafuru"
+        android:layout_marginLeft="45dp"
+        android:text="Karafuru is home to 5,555 generative arts where colors reign supreme. Leave the drab reality and enter the world of Karafuru by Museum of Toys."
+        android:textColor="@color/white"
+        android:layout_marginTop="13dp"
+        android:alpha="0.4"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear1_karafuruprofile"
+        android:orientation="vertical"
+        android:background="@drawable/custom_nft_item_bottom"
+        android:layout_below="@id/profile_name_karafuru"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Items"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:alpha="0.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owners"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:textColor="@color/white"
+                android:alpha="0.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Floor Price"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:textColor="@color/white"
+                android:alpha="0.5"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volume trade"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="26dp"
+                android:textColor="@color/white"
+                android:alpha="0.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5,6K"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3,7K"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="32dp"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logos_ethereum"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="43dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2,4"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="7dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logos_ethereum"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="51dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="36,3K"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:textSize="18dp"
+                android:layout_marginLeft="7dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_karafuru_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_karafuruprofile"
+        android:layout_marginTop="15dp"
+        android:background="@color/dark">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Items" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout_karafuru_profile"
+        android:id="@+id/viewpager_karafuru_profile"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

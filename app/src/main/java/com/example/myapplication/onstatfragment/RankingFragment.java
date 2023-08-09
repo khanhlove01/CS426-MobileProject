@@ -52,11 +52,17 @@ public class RankingFragment extends Fragment {
         mList.add(new NFTRankingInfo("03",R.drawable.profile_verified_ranking3,"Bored Ape Yacht Club"
                 ,"-18,54%","4,218"));
 
-        /*mList.add(new NFTRankingInfo("04",R.drawable.profile_verified_ranking4,"Bored Ape Yacht Club"
+        mList.add(new NFTRankingInfo("04",R.drawable.profile_verified_ranking4,"Bored Ape Yacht Club"
                 ,"-18,54%","4,218"));
 
         mList.add(new NFTRankingInfo("05",R.drawable.profile_verified_ranking5,"Bored Ape Yacht Club"
-                ,"-18,54%","4,218"));*/
+                ,"-18,54%","4,218"));
+
+        mList.add(new NFTRankingInfo("04",R.drawable.profile_verified_ranking4,"Bored Ape Yacht Club"
+                ,"-18,54%","4,218"));
+
+        mList.add(new NFTRankingInfo("05",R.drawable.profile_verified_ranking5,"Bored Ape Yacht Club"
+                ,"-18,54%","4,218"));
         return mList;
     }
 }

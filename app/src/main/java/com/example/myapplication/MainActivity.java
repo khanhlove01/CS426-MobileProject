@@ -21,11 +21,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //clear data
+
         // initalize data
         AppController.addNFTTrending();
         AppController.addNFTArt();
         AppController.addNFTGaming();
         AppController.addNFTFullList();
+        AppController.addNFTOfferMade();
         //data
 
         FrameLayout frameLayout_main =findViewById(R.id.framelayout_main);

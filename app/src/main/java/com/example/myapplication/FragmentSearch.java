@@ -56,7 +56,6 @@ public class FragmentSearch extends Fragment {
                 return true;
             }
         });
-
         //Adapter
         adapterNFTSearch = new AdapterNFTSearch(getContext(),AppController.nftHomeFullList);
         rcv_searchfragment.setAdapter(adapterNFTSearch);
@@ -75,6 +74,14 @@ public class FragmentSearch extends Fragment {
         } else {
             Log.d("FilteredList", "Filtered items: " + filteredList.size());
             adapterNFTSearch.setFilteredList(filteredList);
+            //adapterNFTSearch.notifyDataSetChanged();
+
+            /*rcv_searchfragment = view.findViewById(R.id.rcv_searchfragment);
+            GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(),2);
+            rcv_searchfragment.setLayoutManager(gridLayoutManager);
+
+            adapterNFTSearch = new AdapterNFTSearch(getContext(),filteredList);
+            rcv_searchfragment.setAdapter(adapterNFTSearch);*/
         }
     }
 

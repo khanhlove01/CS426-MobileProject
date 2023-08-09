@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,7 +12,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
+import com.example.myapplication.mywaitingbid.WaitingBid;
 import com.example.myapplication.onhomefragment.AdapterCollections;
 import com.example.myapplication.onhomefragment.ArtFragment;
 import com.example.myapplication.onhomefragment.GamingFragment;
@@ -74,6 +77,16 @@ public class FragmentHome extends Fragment {
 
         adapterCollections = new AdapterCollections(getContext(),getListTrendingCollections());
         rcv_trending_collections.setAdapter(adapterCollections);
+
+        // go to waiting bid
+        ImageView imageViewAvatar = view.findViewById(R.id.avatar_home_fragment);
+        imageViewAvatar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), WaitingBid.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
     private List<NFTCollections> getListTrendingCollections()

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/secondary">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_favourite1"
+            android:id="@+id/image_nft_favourite"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Potato"
+            android:layout_below="@id/image_nft_favourite"
+            android:textColor="@color/white"
+            android:alpha="0.5"
+            android:id="@+id/name_nft_favourite_above"
+            android:layout_marginLeft="14dp"/>
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/icon_verified"
+            android:layout_below="@+id/image_nft_favourite"
+            android:layout_toRightOf="@id/name_nft_favourite_above"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_heart_like"
+            android:layout_below="@id/image_nft_favourite"
+            android:layout_marginTop="1.5dp"
+            android:layout_marginLeft="96dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="213"
+            android:layout_below="@id/image_nft_favourite"
+            android:layout_marginLeft="118dp"
+            android:textColor="@color/white"
+            android:alpha="0.5"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Young Lex"
+            android:layout_below="@id/name_nft_favourite_above"
+            android:id="@+id/name_nft_favourite_below"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logos_ethereum"
+            android:layout_below="@id/name_nft_favourite_below"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2,75 ETH"
+            android:layout_below="@id/name_nft_favourite_below"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="33dp"
+            android:textSize="17dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

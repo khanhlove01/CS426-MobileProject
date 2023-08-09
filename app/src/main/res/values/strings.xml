@@ -2,4 +2,19 @@
     <string name="app_name">My Application</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="spinner_items">
+        <item>1 months</item>
+        <item>2 months</item>
+        <item>3 months</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+    <string-array name="spinner_time">
+        <item>6AM</item>
+        <item>12PM</item>
+        <item>6PM</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
 </resources>

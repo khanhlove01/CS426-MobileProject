@@ -1,14 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark"
     tools:context=".FragmentProfile">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/banner"
+        android:id="@+id/banner_profile_fragment"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image_profile6"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="140dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_verified"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="217dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_world"
+        android:id="@+id/icon_world_profilefragment"
+        android:layout_below="@id/banner_profile_fragment"
+        android:layout_marginLeft="225dp"
+        android:layout_marginTop="30dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_profile_fragment"
+        android:layout_toRightOf="@id/icon_world_profilefragment"
+        android:src="@drawable/icon_insta"
+        android:id="@+id/icon_insta_profile_fragment"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="16dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner_profile_fragment"
+        android:layout_toRightOf="@id/icon_insta_profile_fragment"
+        android:src="@drawable/icon_twitter"
+        android:id="@+id/icon_twitter_profile_fragment"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/discord_profile_fragment"
+        android:layout_below="@id/banner_profile_fragment"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/icon_twitter_profile_fragment"
+        android:src="@drawable/icon_discord" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TMKhanh"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/profile_name_midking"
+        android:layout_below="@id/icon_world_profilefragment"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_address_wallet"
+        android:layout_below="@+id/profile_name_midking"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/wallet_address"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/wallet_address"
+        android:id="@+id/wallet_address_address"
+        android:text="0x841a...8a57"
+        android:layout_below="@id/profile_name_midking"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:alpha="0.5"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_edit_profile_button"
+        android:layout_below="@id/icon_world_profilefragment"
+        android:layout_toRightOf="@id/profile_name_midking"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="65dp"/>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wallet_address_address"
+        android:text="Sell anything"
+        android:textColor="@color/white"
+        android:id="@+id/sellanything"
+        android:alpha="0.5"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="40dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_1"
+        android:layout_below="@id/sellanything"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:text="54"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Items Total"
+            android:textColor="@color/white"
+            android:alpha="0.5"/>
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:text="3,7K"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Views"
+            android:textColor="@color/white"
+            android:alpha="0.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:text="1,2K"
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Liked"
+            android:textColor="@color/white"
+            android:alpha="0.5"/>
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout_profile_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_1"
+        android:layout_marginTop="15dp"
+        android:background="@color/dark">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favourite" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Offers Made" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tabLayout_profile_fragment"
+        android:id="@+id/viewpager_profile_fragment"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
