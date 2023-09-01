@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    tools:context=".uploadingimage.FirstUploadingPage">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar_upload_item">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_upload_item"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/dark">
+            <TextView
+                android:id="@+id/title_main_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Upload Items"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_icon"
+        android:layout_margin="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload new items*"
+        android:textColor="@color/white"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/textview_upload_items"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="File types supported: JPG, PNG, GIF, SVG, MP4, WEBM,\nMP3, WAV, OGG, GLB, GLTF, Max size: 40 MB"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_below="@+id/textview_upload_items"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Upload"
+        android:backgroundTint="@color/secondary"
+        android:layout_below="@+id/imageview_upload_your_nft"/>
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:src="@drawable/input_your_nft"
+        android:id="@+id/imageview_upload_your_nft"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gray"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btn_upload">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_upload_items"
+            android:background="@drawable/layout_textview"
+            android:hint="Name"
+            android:maxLines="1"
+            android:textColor="@color/gray"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/gray"
+        android:layout_marginTop="100dp"
+        android:hint="Bio"
+        android:layout_below="@+id/btn_upload">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_textview"
+            android:textColor="@color/gray"
+            android:maxLines="1"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/next_first_uploading"
+        android:layout_below="@+id/btn_upload"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Next"/>
+    
+
+</RelativeLayout>

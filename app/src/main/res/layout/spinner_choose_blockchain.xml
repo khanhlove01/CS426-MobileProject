@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/secondary"
+    app:cardCornerRadius="10dp">
+
+    <TextView
+        android:id="@+id/textview_selected_choose_blockchain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:text="Select Blockchain"
+        android:textSize="20dp"
+        android:layout_toStartOf="@+id/dropdown_icon_choose_blockchain"
+        android:padding="10dp"/>
+    
+    <ImageView
+        android:id="@+id/dropdown_icon_choose_blockchain"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="310dp"
+        android:src="@drawable/drop_down_icon"/>
+</androidx.cardview.widget.CardView>
