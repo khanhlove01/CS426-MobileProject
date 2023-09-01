@@ -90,6 +90,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_margin="15dp"
+        android:weightSum="4"
         android:background="@drawable/custom_nft_item_bottom">
 
         <ImageView
@@ -98,30 +99,31 @@
             android:id="@+id/bid_detail_minus"
             android:paddingBottom="20dp"
             android:paddingTop="20dp"
-            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
             android:src="@drawable/icon_minus_circle"/>
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginTop="17dp"
-            android:layout_marginLeft="16dp"
+            android:layout_gravity=""
+            android:layout_weight="1"
             android:src="@drawable/logos_ethereum"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="2.75"
             android:id="@+id/bid_detail_eth_price"
             android:layout_marginTop="15dp"
-            android:layout_marginLeft="12dp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="27dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:id="@+id/bid_detail_plus"
             android:layout_marginTop="20dp"
-            android:layout_marginLeft="16dp"
             android:src="@drawable/icon_add_circle"/>
     </LinearLayout>
 

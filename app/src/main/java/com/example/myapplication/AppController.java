@@ -10,6 +10,7 @@ import java.util.List;
 public class AppController {
 
     public static int check = 0;
+    public static float totalETHWeHave = 26.031f;
     public static List<NFTHome> nftHomeTrendingList = new ArrayList<>();
     public static List<NFTHome> nftHomeArtList = new ArrayList<>();
 

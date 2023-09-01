@@ -1,12 +1,15 @@
 package com.example.myapplication.onplacebid;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -46,6 +49,31 @@ public class BidHistoryAdapter extends RecyclerView.Adapter<BidHistoryAdapter.Bi
         holder.textViewNFTBidHistoryUSDPrice.setText(nftBidHistoryInfo.getNFTBidHistoryUSDPrice());
         holder.textViewNFTBidHistoryFloorDiff.setText(nftBidHistoryInfo.getNFTBidHistoryFloorDiff());
         holder.textViewNFTBidHistoryExpiration.setText(nftBidHistoryInfo.getNFTBidHistoryExpiration());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(holder.itemView.getContext());
+                builder.setTitle("Are you sure about that?")
+                        .setMessage("Delete this bid!!!")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                //Controller.total_reward-=500;
+                                //System.out.println(Controller.total_reward);
+                                list.remove(position);
+                                notifyDataSetChanged();
+                                Toast.makeText(holder.itemView.getContext(),"Deleted",Toast.LENGTH_SHORT).show();
+
+                            }
+                        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                builder.setCancelable(true);
+                            }
+                        }).show();
+            }
+        });
     }
 
     @Override
