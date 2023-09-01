@@ -37,6 +37,10 @@ public class AdapterOfferMade extends RecyclerView.Adapter<AdapterOfferMade.Offe
 
         if(nftOfferMadeInfo == null) return;
 
+        /*Glide.with(context)
+                .load(nftOfferMadeInfo.getNFT_Offer_Made_ImageUri()) // Use the appropriate method to get the Uri
+                .into(holder.imageViewOfferMade);*/
+
         holder.imageViewOfferMade.setImageResource(nftOfferMadeInfo.getNFT_Offer_Made_Image());
         holder.textViewOfferMadeName.setText(nftOfferMadeInfo.getNFT_Offer_Made_Name());
         holder.textViewOfferMadeETHPrice.setText(nftOfferMadeInfo.getNFT_Offer_Made_ETHPrice());

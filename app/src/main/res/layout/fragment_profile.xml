@@ -95,10 +95,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/icon_edit_profile_button"
+        android:id="@+id/edit_profile"
         android:layout_below="@id/icon_world_profilefragment"
         android:layout_toRightOf="@id/profile_name_midking"
         android:layout_marginTop="58dp"
         android:layout_marginLeft="65dp"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_upload"
+        android:layout_toRightOf="@id/edit_profile"
+        android:layout_below="@id/icon_world_profilefragment"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/upload_image"/>
+
 
     <TextView
         android:layout_width="match_parent"

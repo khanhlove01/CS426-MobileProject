@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".uploadingimage.FourthUploadingPage"
+            android:exported="false" />
+        <activity
+            android:name=".uploadingimage.ThirdUploadingPage"
+            android:exported="false" />
+        <activity
+            android:name=".uploadingimage.SecondUploadingPage"
+            android:exported="false" />
+        <activity
+            android:name=".uploadingimage.FirstUploadingPage"
+            android:exported="false" />
+        <activity
             android:name=".mywaitingbid.WaitingBid"
             android:exported="false" />
         <activity

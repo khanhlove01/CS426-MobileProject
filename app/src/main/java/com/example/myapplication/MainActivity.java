@@ -24,11 +24,15 @@ public class MainActivity extends AppCompatActivity {
         //clear data
 
         // initalize data
-        AppController.addNFTTrending();
-        AppController.addNFTArt();
-        AppController.addNFTGaming();
-        AppController.addNFTFullList();
-        AppController.addNFTOfferMade();
+        if(AppController.check == 0)
+        {
+            AppController.addNFTTrending();
+            AppController.addNFTArt();
+            AppController.addNFTGaming();
+            AppController.addNFTFullList();
+            AppController.addNFTOfferMade();
+            AppController.check = 1;
+        }
         //data
 
         FrameLayout frameLayout_main =findViewById(R.id.framelayout_main);

@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -12,8 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.example.myapplication.mywaitingbid.WaitingBid;
 import com.example.myapplication.onprofilefragment.ProfileViewPagerAdapter;
+import com.example.myapplication.uploadingimage.FirstUploadingPage;
 import com.google.android.material.tabs.TabLayout;
+
+import java.util.List;
 
 public class FragmentProfile extends Fragment {
 
@@ -62,6 +68,17 @@ public class FragmentProfile extends Fragment {
             }
         });
 
+        // icon upload image
+        ImageView imageViewUploadIcon = view.findViewById(R.id.upload_image);
+        imageViewUploadIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), FirstUploadingPage.class);
+                startActivity(intent);
+            }
+        });
+
+
         //icon world
         ImageView imageViewWorldIcon = view.findViewById(R.id.icon_world_profilefragment);
         imageViewWorldIcon.setOnClickListener(new View.OnClickListener() {
@@ -105,10 +122,38 @@ public class FragmentProfile extends Fragment {
                 getContext().startActivity(intentAiguilleur);*/
             }
         });
+        //icon twiiter
+        ImageView imageViewTwitterIcon = view.findViewById(R.id.icon_twitter_profile_fragment);
+        imageViewTwitterIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openTwitter();
+            }
+        });
 
         return view;
     }
+    private void openTwitter()
+    {
+        // Replace "twitterLink" with the actual Twitter link you want to open
+        String twitterLink = "https://twitter.com/elonmusk";
 
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(twitterLink));
+
+// Check if the Twitter app is installed
+        PackageManager packageManager = getActivity().getPackageManager();
+        List<ResolveInfo> resolveInfoList = packageManager.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
+
+        if (resolveInfoList.isEmpty()) {
+            // Twitter app not installed, open link in a web browser
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse(twitterLink));
+        }
+
+        startActivity(intent);
+
+
+
+    }
     private void openFacebookPage(String pageUrl) {
         try {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("fb://facewebmodal/f?href=" + pageUrl));
@@ -122,7 +167,7 @@ public class FragmentProfile extends Fragment {
     // Inside your Activity or Fragment
     public void openInstagram() {
         // Instagram package name
-        String instagramPackageName = "com.instagram.android";
+        /*String instagramPackageName = "com.instagram.android";
 
         // Create an explicit intent to open Instagram
         Intent intent = getActivity().getPackageManager().getLaunchIntentForPackage(instagramPackageName);
@@ -136,6 +181,23 @@ public class FragmentProfile extends Fragment {
             intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
         }
+*/
+        // Replace "instagramLink" with the actual Instagram link you want to open
+        String instagramLink = "https://www.instagram.com/tm.khanhhhhh/";
+
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(instagramLink));
+
+// Check if the Instagram app is installed
+        PackageManager packageManager = getActivity().getPackageManager();
+        List<ResolveInfo> resolveInfoList = packageManager.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
+
+        if (resolveInfoList.isEmpty()) {
+            // Instagram app not installed, open link in a web browser
+            intent = new Intent(Intent.ACTION_VIEW, Uri.parse(instagramLink));
+        }
+
+        startActivity(intent);
+
     }
 
 }

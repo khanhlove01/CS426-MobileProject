@@ -15,7 +15,8 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -26,16 +27,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Balance"
                 android:layout_below="@+id/logo_eth_home"
-                android:textColor="@color/white"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:alpha="0.5"
+                android:text="Balance"
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="26,031"
                 android:textColor="@color/white"
+                android:layout_marginTop="2dp"
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_toRightOf="@+id/logo_eth_home"/>
@@ -45,6 +49,7 @@
         <ImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
+            android:layout_marginLeft="200dp"
             android:id="@+id/avatar_home_fragment"
             android:src="@drawable/avatar"/>
     </LinearLayout>
@@ -81,7 +86,9 @@
         android:id="@+id/framelayout_home_nft"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"/>
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"
