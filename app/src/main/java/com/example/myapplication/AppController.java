@@ -23,11 +23,11 @@ public class AppController {
     public static void addNFTOfferMade()
     {
         nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.activity_image1,"Kakira #1599","0,003",
-                "1 months ago","$35,63","3 months"));
+                "1 months ago","$35,63","3 months",""));
         nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.activity_image2,"Kakira #1099","0,006",
-                "2 months ago","$71,16","2 months"));
+                "2 months ago","$71,16","2 months",""));
         nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.activity_image1,"Kakira #1599","0,003",
-                "1 months ago","$35,63","3 months"));
+                "1 months ago","$35,63","3 months",""));
     }
 
     public static void addNFTTrending()

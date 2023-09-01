@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.myapplication.R;
 
 import java.util.List;
@@ -40,8 +41,16 @@ public class AdapterOfferMade extends RecyclerView.Adapter<AdapterOfferMade.Offe
         /*Glide.with(context)
                 .load(nftOfferMadeInfo.getNFT_Offer_Made_ImageUri()) // Use the appropriate method to get the Uri
                 .into(holder.imageViewOfferMade);*/
-
-        holder.imageViewOfferMade.setImageResource(nftOfferMadeInfo.getNFT_Offer_Made_Image());
+        if(nftOfferMadeInfo.getNFT_Offer_Made_ImageUriImageUri() == "")
+        {
+            holder.imageViewOfferMade.setImageResource(nftOfferMadeInfo.getNFT_Offer_Made_Image());
+        }
+        else
+        {
+            Glide.with(context)
+                .load(nftOfferMadeInfo.getNFT_Offer_Made_ImageUriImageUri()) // Use the appropriate method to get the Uri
+                .into(holder.imageViewOfferMade);
+        }
         holder.textViewOfferMadeName.setText(nftOfferMadeInfo.getNFT_Offer_Made_Name());
         holder.textViewOfferMadeETHPrice.setText(nftOfferMadeInfo.getNFT_Offer_Made_ETHPrice());
         holder.textViewOfferMadeTimeAgo.setText(nftOfferMadeInfo.getNFT_Offer_Made_TimeAgo());
