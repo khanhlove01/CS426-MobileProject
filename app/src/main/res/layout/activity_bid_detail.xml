@@ -37,14 +37,14 @@
         <ImageView
             android:layout_width="200dp"
             android:layout_height="220dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="10dp"
             android:id="@+id/nft_image_bid_detail"
             android:src="@drawable/avatar_home1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
