@@ -24,7 +24,7 @@
                 android:layout_gravity="center_horizontal"
                 android:text="Upload Items"
                 android:textColor="@color/white"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textStyle="bold" />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
