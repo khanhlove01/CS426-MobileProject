@@ -10,7 +10,9 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -34,14 +36,15 @@
                     android:id="@+id/nft_offer_made_name"
                     android:text="Kakira #5533"
                     android:textColor="@color/white"
-                    android:textSize="24dp"/>
+                    android:textSize="24dp"
+                    android:layout_marginStart="10dp"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="70dp"
+                android:layout_marginLeft="20dp"
                 android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -56,6 +59,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/nft_offer_made_ethprice"
+                        android:layout_marginStart="5dp"
                         android:text="0,0002"
                         android:textColor="@color/white"/>
                 </LinearLayout>
@@ -78,15 +82,17 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="USD Price"
                     android:textSize="17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -94,43 +100,49 @@
                     android:id="@+id/nft_offer_made_usdprice"
                     android:text="$153,16"
                     android:textColor="@color/white"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/quantity_offer_made"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
                     android:text="Quantity"
-                    android:textStyle="bold" />
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="75dp"
                     android:layout_below="@id/quantity_offer_made"
                     android:text="1"
                     android:textColor="@color/white"
-                    android:textStyle="bold" />
-            </RelativeLayout>
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="From"
                     android:textSize="17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -138,21 +150,23 @@
                     android:id="@+id/nft_offer_made_fromyou"
                     android:text="You"
                     android:textColor="@android:color/holo_blue_light"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Expiration"
                     android:textSize="17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -160,7 +174,8 @@
                     android:id="@+id/nft_offer_made_expiration"
                     android:text="3 months"
                     android:textColor="@color/white"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

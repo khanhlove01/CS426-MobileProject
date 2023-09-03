@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/secondary"
@@ -10,26 +10,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/nft_rankings_sothutu"
                 android:text="01"
                 android:textColor="@color/white"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"/>
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/nft_rankings_image"
-                android:src="@drawable/profile_verified_ranking1"/>
+                android:src="@drawable/profile_verified_ranking1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -37,37 +43,46 @@
                 android:id="@+id/nft_rankings_namenft"
                 android:text="Bored Ape Yacht Club"
                 android:textColor="@color/white"
-                android:textSize="20dp"/>
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"/>
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                >
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/logos_ethereum"
-                    android:id="@+id/logo_eth_rankings"
-                    android:layout_marginLeft="70dp"/>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="4,218"
-                    android:layout_toRightOf="@id/logo_eth_rankings"
-                    android:layout_marginLeft="5dp"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"/>
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/logos_ethereum"
+                        android:id="@+id/logo_eth_rankings" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4,218"
+                        android:layout_toRightOf="@id/logo_eth_rankings"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"/>
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="+23,00%"
                     android:layout_below="@id/logo_eth_rankings"
-                    android:textColor="@android:color/holo_green_dark"
-                    android:layout_marginLeft="70dp"/>
+                    android:textColor="@android:color/holo_green_dark" />
 
-            </RelativeLayout>
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -76,6 +91,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -85,7 +101,8 @@
                     android:layout_height="wrap_content"
                     android:text="24h%"
                     android:textSize="17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -94,46 +111,53 @@
                     android:text="-75.00%"
                     android:textColor="@android:color/holo_red_dark"
                     android:textSize="17dp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
-            <RelativeLayout
+            <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
 
                 <TextView
                     android:id="@+id/floor_price_ranking"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
                     android:text="Floor price"
-                    android:textStyle="bold" />
+                    android:textSize="17dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
-                <ImageView
-                    android:id="@+id/logo_eth_floor_price"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/floor_price_ranking"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/logos_ethereum" />
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/nft_rankings_floor_price"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_toRightOf="@id/logo_eth_floor_price"
-                    android:text="4,218"
-                    android:textColor="@color/white"
-                    android:textStyle="bold" />
-            </RelativeLayout>
+                    <ImageView
+                        android:id="@+id/logo_eth_floor_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/logos_ethereum" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nft_rankings_floor_price"
+                        android:text="4,218"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_marginStart="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -141,20 +165,22 @@
                     android:layout_height="wrap_content"
                     android:text="Owner"
                     android:textSize="17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6,38k"
                     android:textColor="@color/white"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -162,14 +188,16 @@
                     android:layout_height="wrap_content"
                     android:text="Items"
                     android:textSize="17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10k"
                     android:textColor="@color/white"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

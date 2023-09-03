@@ -8,7 +8,7 @@
     app:cardCornerRadius="15dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
@@ -52,7 +52,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="30dp"
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical">
 
@@ -99,7 +99,7 @@
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical">
 
@@ -108,7 +108,8 @@
                     android:layout_height="wrap_content"
                     android:text="USD Price"
                     android:textSize="17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -116,13 +117,14 @@
                     android:id="@+id/nft_activity_usdprice"
                     android:text="$153,16"
                     android:textColor="@color/white"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical">
 
@@ -131,7 +133,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Quantity"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -139,13 +143,14 @@
                     android:layout_below="@id/quantity_activity"
                     android:text="1"
                     android:textColor="@color/white"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical">
 
@@ -154,7 +159,8 @@
                     android:layout_height="wrap_content"
                     android:text="From"
                     android:textSize="17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -162,13 +168,14 @@
                     android:id="@+id/nft_activity_fromperson"
                     android:text="Aleben"
                     android:textColor="@android:color/holo_blue_light"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:layout_gravity="center_vertical">
 
@@ -177,7 +184,8 @@
                     android:layout_height="wrap_content"
                     android:text="To"
                     android:textSize="17dp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -185,7 +193,8 @@
                     android:id="@+id/nft_rankings_toperson"
                     android:text="10k"
                     android:textColor="@android:color/holo_blue_light"
-                    android:textSize="17dp" />
+                    android:textSize="17dp"
+                    android:layout_gravity="center_horizontal"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
