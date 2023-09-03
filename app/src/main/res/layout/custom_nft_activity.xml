@@ -76,6 +76,7 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/nft_activity_ethprice"
                         android:text="0,0002"
+                        android:layout_marginStart="5dp"
                         android:textColor="@color/white"/>
                 </LinearLayout>
 
