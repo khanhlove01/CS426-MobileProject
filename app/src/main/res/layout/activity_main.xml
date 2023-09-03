@@ -19,6 +19,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:background="@drawable/custom_navigation_bar"
-        app:menu="@menu/bottom_navigation_bar" />
+        app:menu="@menu/bottom_navigation_bar"
+        app:itemTextColor="@color/white"/>
 
 </RelativeLayout>

@@ -23,6 +23,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/appbar_waiting_bid">
+
             <TextView
                 android:id="@+id/title_main"
                 android:layout_width="wrap_content"
@@ -30,21 +31,21 @@
                 android:layout_gravity="center"
                 android:text="My bid"
                 android:textColor="@color/white"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:textStyle="bold" />
+
             <ImageView
+                android:id="@+id/image_home_waiting_bid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/home"
-                android:id="@+id/image_home_waiting_bid"
-                android:layout_gravity="right"/>
+                android:src="@drawable/home_icon" />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_my_waiting_bid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:layout_below="@id/appbar_waiting_bid"
-        android:id="@+id/rcv_my_waiting_bid"/>
+        android:layout_margin = "10dp"/>
 </RelativeLayout>

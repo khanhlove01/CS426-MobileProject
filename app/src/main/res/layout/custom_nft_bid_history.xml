@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:src="@drawable/logos_ethereum"
                     android:id="@+id/logo_eth_bidhistory"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="100dp"
                     android:layout_marginTop="10dp"/>
 
                 <TextView
@@ -50,7 +50,7 @@
                     android:id="@+id/nft_bid_history_eth_price"
                     android:text="2.08"
                     android:textColor="@color/white"
-                    android:layout_marginLeft="140dp"
+                    android:layout_marginLeft="120dp"
                     android:layout_marginTop="10dp"/>
 
                 <TextView
@@ -61,7 +61,7 @@
                     android:layout_below="@+id/logo_eth_bidhistory"
                     android:textColor="@color/white"
                     android:alpha="0.6"
-                    android:layout_marginLeft="80dp"
+                    android:layout_marginLeft="60dp"
                     android:layout_marginTop="4dp"/>
 
             </RelativeLayout>
