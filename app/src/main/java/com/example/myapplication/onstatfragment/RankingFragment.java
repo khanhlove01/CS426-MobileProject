@@ -58,6 +58,15 @@ public class RankingFragment extends Fragment {
         mList.add(new NFTRankingInfo("05",R.drawable.profile_verified_ranking5,"Yellow art Collection"
                 ,"-18,64%","4,21"));
 
+        mList.add(new NFTRankingInfo("06",R.drawable.round5,"Azuki Shield collection"
+                ,"-25,44%","1,66"));
+
+        mList.add(new NFTRankingInfo("07",R.drawable.round6,"Red moon collection"
+                ,"-17,17%","0,32"));
+
+        mList.add(new NFTRankingInfo("08",R.drawable.round15,"Technology Collection"
+                ,"-33,02%","0,21"));
+
         return mList;
     }
 }

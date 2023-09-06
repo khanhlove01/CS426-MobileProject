@@ -128,13 +128,13 @@ public class BidDetailActivity extends AppCompatActivity {
         List<NFTBidHistoryInfo> list = new ArrayList<>();
 
         list.add(new NFTBidHistoryInfo(R.drawable.image_bid_history1,"Curious Joe","2,08"
-        ,"10 Hours ago","5,180.48","17% Below","3 Months"));
+        ,"10 Hours ago","4,160","8% Below","3 Months"));
 
-        list.add(new NFTBidHistoryInfo(R.drawable.image_bid_history1,"Curious Joe","2,08"
-                ,"10 Hours ago","5,180.48","17% Below","3 Months"));
+        list.add(new NFTBidHistoryInfo(R.drawable.img11,"Sword Sword","2,08"
+                ,"23 Hours ago","4,160","8% Below","3 Months"));
 
-        list.add(new NFTBidHistoryInfo(R.drawable.image_bid_history1,"Curious Joe","2,08"
-                ,"10 Hours ago","5,180.48","17% Below","3 Months"));
+        list.add(new NFTBidHistoryInfo(R.drawable.img11,"Sword Sword","2,16"
+                ,"42 Hours ago","4,320","6% Below","3 Months"));
 
         return list;
     }

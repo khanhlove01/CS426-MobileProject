@@ -58,6 +58,11 @@ public class AppController {
         nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home3,"Avatar #903"));
         nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home4,"Avatar #154"));
 
+        /*nftHomeGamingList.add(new NFTHome(R.drawable.img8,"CatCat #102"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.img9,"CatCat #963"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.img10,"CatCat #636"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.img9,"CatCat #021"));*/
+
         /*nftHomeGamingList.add(new NFTHome(R.drawable.trending_home1,"BearNFT #545"));
         nftHomeGamingList.add(new NFTHome(R.drawable.trending_home2,"BearNFT #545"));
         nftHomeGamingList.add(new NFTHome(R.drawable.trending_home3,"BearNFT #545"));

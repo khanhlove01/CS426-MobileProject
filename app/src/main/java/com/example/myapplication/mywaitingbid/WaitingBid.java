@@ -38,7 +38,7 @@ public class WaitingBid extends AppCompatActivity {
         if(img_name != null)
         {
             AppController.nftBidHistoryInfoList.add(new NFTBidHistoryInfo(id_img,img_name,numETH+"","15 Minutes ago",
-                    "$5,128.35","18% Above",expirationDate));
+                    numETH*2000+"","10% Above",expirationDate));
         }
 
         //rcv
