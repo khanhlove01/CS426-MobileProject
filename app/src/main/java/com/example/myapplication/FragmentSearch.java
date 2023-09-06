@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
@@ -11,6 +12,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.myapplication.onhomefragment.NFTHome;
@@ -43,6 +45,16 @@ public class FragmentSearch extends Fragment {
 
         //search
         searchView = view.findViewById(R.id.searchview_searchfragment);
+        EditText searchEditText  = searchView.findViewById(androidx.appcompat.R.id.search_src_text);
+
+        // Set the text color to white
+        searchEditText.setTextColor(Color.WHITE);
+
+        // Set the hint text color to white
+        searchEditText.setHintTextColor(Color.WHITE);
+        searchEditText.setHintTextColor(Color.argb(128, 255, 255, 255)); // 128 is the alpha value (0-255)
+
+
         searchView.clearFocus();
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
