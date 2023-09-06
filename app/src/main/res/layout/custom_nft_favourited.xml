@@ -14,8 +14,8 @@
         android:layout_height="wrap_content"
         android:padding="10dp">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:src="@drawable/image_favourite1"
             android:id="@+id/image_nft_favourite"
             android:padding="10dp"/>

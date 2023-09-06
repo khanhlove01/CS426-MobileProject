@@ -44,25 +44,20 @@ public class RankingFragment extends Fragment {
     {
         List<NFTRankingInfo> mList = new ArrayList<>();
         mList.add(new NFTRankingInfo("01",R.drawable.profile_verified_ranking1,"Bored Ape Yacht Club"
-        ,"-18,54%","4,218"));
+        ,"-12,74%","2,21"));
 
-        mList.add(new NFTRankingInfo("02",R.drawable.profile_verified_ranking2,"Bored Ape Yacht Club"
-                ,"-18,54%","4,218"));
+        mList.add(new NFTRankingInfo("02",R.drawable.profile_verified_ranking2,"Cryptopunks collection"
+                ,"-19,94%","1,29"));
 
-        mList.add(new NFTRankingInfo("03",R.drawable.profile_verified_ranking3,"Bored Ape Yacht Club"
-                ,"-18,54%","4,218"));
+        mList.add(new NFTRankingInfo("03",R.drawable.profile_verified_ranking3,"Meebits collection"
+                ,"-18,04%","0,99"));
 
-        mList.add(new NFTRankingInfo("04",R.drawable.profile_verified_ranking4,"Bored Ape Yacht Club"
-                ,"-18,54%","4,218"));
+        mList.add(new NFTRankingInfo("04",R.drawable.profile_verified_ranking4,"Azuki Japan Arts"
+                ,"-22,14%","0,84"));
 
-        mList.add(new NFTRankingInfo("05",R.drawable.profile_verified_ranking5,"Bored Ape Yacht Club"
-                ,"-18,54%","4,218"));
+        mList.add(new NFTRankingInfo("05",R.drawable.profile_verified_ranking5,"Yellow art Collection"
+                ,"-18,64%","4,21"));
 
-        mList.add(new NFTRankingInfo("04",R.drawable.profile_verified_ranking4,"Bored Ape Yacht Club"
-                ,"-18,54%","4,218"));
-
-        mList.add(new NFTRankingInfo("05",R.drawable.profile_verified_ranking5,"Bored Ape Yacht Club"
-                ,"-18,54%","4,218"));
         return mList;
     }
 }

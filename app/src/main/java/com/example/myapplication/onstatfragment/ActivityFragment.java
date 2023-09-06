@@ -44,9 +44,13 @@ public class ActivityFragment extends Fragment {
     {
         List<NFTActivityInfo> list = new ArrayList<>();
         list.add(new NFTActivityInfo(R.drawable.activity_image1,"Genesis karira","Karira #5533",
-                "$153,16","TMK","PDL"));
-        list.add(new NFTActivityInfo(R.drawable.activity_image2,"Genesis karira","Karira #5533",
-                "$153,16","TMK","PDL"));
+                "$100,00","TMK","PDL"));
+        list.add(new NFTActivityInfo(R.drawable.activity_image2,"Blue Asia horse","Horse #1965",
+                "$100,00","PDL","TMK"));
+        /*list.add(new NFTActivityInfo(R.drawable.img1,"Cryptopunks","Cryptopunks #5133",
+                "$100,00","TMK","PDL"));
+        list.add(new NFTActivityInfo(R.drawable.img4,"Ghost","Ghost #1965",
+                "$100,00","PDL","TMK"));*/
         return list;
     }
 }

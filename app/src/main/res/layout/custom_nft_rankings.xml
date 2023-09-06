@@ -35,7 +35,7 @@
                 android:id="@+id/nft_rankings_image"
                 android:src="@drawable/profile_verified_ranking1"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="5dp"/>
+                android:layout_marginLeft="15dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -45,44 +45,9 @@
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginStart="5dp"/>
+                android:layout_marginLeft="15dp"
+                />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginStart="20dp">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/logos_ethereum"
-                        android:id="@+id/logo_eth_rankings" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="4,218"
-                        android:layout_toRightOf="@id/logo_eth_rankings"
-                        android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:layout_marginStart="5dp"/>
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+23,00%"
-                    android:layout_below="@id/logo_eth_rankings"
-                    android:textColor="@android:color/holo_green_dark" />
-
-            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout

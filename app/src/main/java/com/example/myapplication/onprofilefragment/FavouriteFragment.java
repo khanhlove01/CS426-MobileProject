@@ -46,10 +46,14 @@ public class FavouriteFragment extends Fragment {
     {
         List<NFTFavouritedInfo> list = new ArrayList<>();
 
-        list.add(new NFTFavouritedInfo(R.drawable.image_favourite1,"Name 1","Name 1"));
-        list.add(new NFTFavouritedInfo(R.drawable.image_favourite2,"Name 2","Name 2"));
-        list.add(new NFTFavouritedInfo(R.drawable.image_favourite1,"Name 1","Name 1"));
-        list.add(new NFTFavouritedInfo(R.drawable.image_favourite2,"Name 2","Name 2"));
+        list.add(new NFTFavouritedInfo(R.drawable.image_favourite1,"King","King #21"));
+        list.add(new NFTFavouritedInfo(R.drawable.image_favourite2,"Yasuo","Yasuo #99"));
+        list.add(new NFTFavouritedInfo(R.drawable.image_favourite1,"King","King #01"));
+        list.add(new NFTFavouritedInfo(R.drawable.image_favourite2,"Yasuo","Yasuo #92"));
+        list.add(new NFTFavouritedInfo(R.drawable.img14,"Dog","Dog #31"));
+        list.add(new NFTFavouritedInfo(R.drawable.img15,"Cat","Cat #02"));
+        list.add(new NFTFavouritedInfo(R.drawable.img14,"Dog","Dog #11"));
+        list.add(new NFTFavouritedInfo(R.drawable.img15,"Cat","Cat #62"));
 
         return list;
     }

@@ -23,12 +23,16 @@ public class AppController {
 
     public static void addNFTOfferMade()
     {
-        nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.activity_image1,"Kakira #1599","0,003",
-                "1 months ago","$35,63","3 months",""));
-        nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.activity_image2,"Kakira #1099","0,006",
-                "2 months ago","$71,16","2 months",""));
-        nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.activity_image1,"Kakira #1599","0,003",
-                "1 months ago","$35,63","3 months",""));
+        nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.activity_image1,"Kakira #1599","0,03",
+                "1 months ago","$60,00","3 months",""));
+        nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.activity_image2,"Horse #1099","0,06",
+                "2 months ago","$120,00","2 months",""));
+        nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.img13,"People #4445","0,02",
+                "1 months ago","$40,00","3 months",""));
+        nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.img17,"Universe #01","0,05",
+                "2 months ago","$100,00","1 month",""));
+        nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.img18,"Nowhere #01","0,02",
+                "1 months ago","$40,00","2 months",""));
     }
 
     public static void addNFTTrending()
