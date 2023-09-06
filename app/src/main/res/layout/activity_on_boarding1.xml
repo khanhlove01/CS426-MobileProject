@@ -9,9 +9,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="380dp"
+        android:layout_height="430dp"
         android:src="@drawable/custom_onboarding"
-        android:layout_marginTop="400dp"/>
+        android:layout_marginTop="440dp"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,10 +27,10 @@
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="430dp"/>
+        android:layout_marginTop="460dp"/>
     <TextView
         android:layout_below="@+id/header_onboarding1"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         android:backgroundTint="@color/blue"
         android:text="Next"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="700dp"
         android:id="@+id/btn_onboarding1"
         android:layout_marginRight="25dp"/>
     <LinearLayout
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/header_onboarding1"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="80dp"
         android:orientation="horizontal">
 
         <ImageView

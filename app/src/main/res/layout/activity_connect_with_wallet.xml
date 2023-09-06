@@ -113,7 +113,7 @@
         android:backgroundTint="@color/blue"
         android:text="Continue"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="650dp"
+        android:layout_marginTop="700dp"
         android:id="@+id/btn_continue"
         android:layout_marginRight="25dp"/>
     <FrameLayout
