@@ -33,31 +33,31 @@ public class AppController {
 
     public static void addNFTTrending()
     {
-        nftHomeTrendingList.add(new NFTHome(R.drawable.cyball_home1,"Cybloc99999"));
-        nftHomeTrendingList.add(new NFTHome(R.drawable.cyball_home2,"Cybloc99999"));
-        nftHomeTrendingList.add(new NFTHome(R.drawable.cyball_home3,"Cybloc99999"));
-        nftHomeTrendingList.add(new NFTHome(R.drawable.cyball_home4,"Cybloc99999"));
+        nftHomeTrendingList.add(new NFTHome(R.drawable.cyball_home1,"Cybloc #569"));
+        nftHomeTrendingList.add(new NFTHome(R.drawable.cyball_home2,"Cybloc #153"));
+        nftHomeTrendingList.add(new NFTHome(R.drawable.cyball_home3,"Cybloc #396"));
+        nftHomeTrendingList.add(new NFTHome(R.drawable.cyball_home4,"Cybloc #111"));
     }
 
     public static  void  addNFTArt()
     {
-        nftHomeArtList.add(new NFTHome(R.drawable.art_home1,"SeasonArt121"));
-        nftHomeArtList.add(new NFTHome(R.drawable.art_home2,"SeasonArt121"));
-        nftHomeArtList.add(new NFTHome(R.drawable.art_home3,"SeasonArt121"));
-        nftHomeArtList.add(new NFTHome(R.drawable.art_home4,"SeasonArt121"));
+        nftHomeArtList.add(new NFTHome(R.drawable.art_home1,"SeasonArt #121"));
+        nftHomeArtList.add(new NFTHome(R.drawable.art_home2,"SeasonArt #441"));
+        nftHomeArtList.add(new NFTHome(R.drawable.art_home3,"SeasonArt #159"));
+        nftHomeArtList.add(new NFTHome(R.drawable.art_home4,"SeasonArt #981"));
     }
 
     public static  void addNFTGaming()
     {
-        nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home1,"Avatar9054"));
-        nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home2,"Avatar9054"));
-        nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home3,"Avatar9054"));
-        nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home4,"Avatar9054"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home1,"Avatar #904"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home2,"Avatar #054"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home3,"Avatar #903"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.avatar_home4,"Avatar #154"));
 
-        nftHomeGamingList.add(new NFTHome(R.drawable.trending_home1,"BearNFT545"));
-        nftHomeGamingList.add(new NFTHome(R.drawable.trending_home2,"BearNFT545"));
-        nftHomeGamingList.add(new NFTHome(R.drawable.trending_home3,"BearNFT545"));
-        nftHomeGamingList.add(new NFTHome(R.drawable.trending_home4,"BearNFT545"));
+        /*nftHomeGamingList.add(new NFTHome(R.drawable.trending_home1,"BearNFT #545"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.trending_home2,"BearNFT #545"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.trending_home3,"BearNFT #545"));
+        nftHomeGamingList.add(new NFTHome(R.drawable.trending_home4,"BearNFT #545"));*/
     }
 
     public static void addNFTFullList()
