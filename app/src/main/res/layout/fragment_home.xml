@@ -32,15 +32,16 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/logo_eth_home"
                 android:layout_centerInParent="true"
-                android:textStyle="bold"
                 android:alpha="0.5"
                 android:text="Balance"
-                android:textColor="@color/white" />
+                android:textColor="@color/white"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="26,031"
+                android:id="@+id/num_eth_total_we_have"
+                android:text="26.031"
                 android:textColor="@color/white"
                 android:layout_marginTop="2dp"
                 android:textSize="20dp"

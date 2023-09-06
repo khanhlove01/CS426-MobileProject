@@ -30,6 +30,7 @@ public class WaitingBid extends AppCompatActivity {
         float numETH = newIntent.getFloatExtra("InfoInfo3",0F);
         String expirationDate = newIntent.getStringExtra("InfoInfo4");
 
+
         /*System.out.println(id_img);
         System.out.println(img_name);
         System.out.println(numETH);
@@ -39,6 +40,9 @@ public class WaitingBid extends AppCompatActivity {
         {
             AppController.nftBidHistoryInfoList.add(new NFTBidHistoryInfo(id_img,img_name,numETH+"","15 Minutes ago",
                     numETH*2000+"","10% Above",expirationDate));
+
+            //update numETH total in main activity
+            AppController.totalETHWeHave-=numETH;
         }
 
         //rcv

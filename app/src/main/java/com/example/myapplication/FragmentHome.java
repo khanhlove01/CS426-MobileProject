@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.myapplication.mywaitingbid.WaitingBid;
 import com.example.myapplication.onhomefragment.AdapterCollections;
@@ -41,7 +42,9 @@ public class FragmentHome extends Fragment {
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
         replaceFragment(new TrendingFragment());
-
+        //update total ETH
+        TextView textViewNumETHTotalMain = view.findViewById(R.id.num_eth_total_we_have);
+        textViewNumETHTotalMain.setText(AppController.totalETHWeHave+"");
         //btn 1
         Button buttonTrending = view.findViewById(R.id.btn_trending);
         buttonTrending.setOnClickListener(new View.OnClickListener() {

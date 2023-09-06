@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -34,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
             AppController.check = 1;
         }
         //data
-
         FrameLayout frameLayout_main =findViewById(R.id.framelayout_main);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_bar);
 

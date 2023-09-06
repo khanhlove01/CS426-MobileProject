@@ -104,7 +104,7 @@ public class SecondUploadingPage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(SecondUploadingPage.this, ThirdUploadingPage.class);
                 AppController.nftOfferMadeInfoList.add(new NFTOfferMadeInfo(R.drawable.activity_image1,"Housing#1932",
-                        numETH+"", "Now","$35,63",
+                        numETH+"", "Now",numETH*2000+"",
                         expirationDate,imageUriString));
                 intent.putExtra("imageUriFromSecondToThird", imageUriString);
                 intent.putExtra("imageNameFromSecondToThird",imageName);

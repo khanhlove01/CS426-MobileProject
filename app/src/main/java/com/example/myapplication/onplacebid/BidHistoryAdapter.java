@@ -14,6 +14,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.myapplication.AppController;
 import com.example.myapplication.R;
 import com.example.myapplication.onprofilefragment.AdapterOfferMade;
 
@@ -49,7 +50,7 @@ public class BidHistoryAdapter extends RecyclerView.Adapter<BidHistoryAdapter.Bi
         holder.textViewNFTBidHistoryUSDPrice.setText(nftBidHistoryInfo.getNFTBidHistoryUSDPrice());
         holder.textViewNFTBidHistoryFloorDiff.setText(nftBidHistoryInfo.getNFTBidHistoryFloorDiff());
         holder.textViewNFTBidHistoryExpiration.setText(nftBidHistoryInfo.getNFTBidHistoryExpiration());
-
+        //float x = Float.parseFloat(nftBidHistoryInfo.getNFTBidHistoryETHPrice());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +63,7 @@ public class BidHistoryAdapter extends RecyclerView.Adapter<BidHistoryAdapter.Bi
                                 //Controller.total_reward-=500;
                                 //System.out.println(Controller.total_reward);
                                 list.remove(position);
+                                AppController.totalETHWeHave+=5;
                                 notifyDataSetChanged();
                                 Toast.makeText(holder.itemView.getContext(),"Deleted",Toast.LENGTH_SHORT).show();
 
