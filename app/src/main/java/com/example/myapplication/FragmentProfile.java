@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.mywaitingbid.WaitingBid;
 import com.example.myapplication.onprofilefragment.ProfileViewPagerAdapter;
 import com.example.myapplication.uploadingimage.FirstUploadingPage;
@@ -75,6 +76,7 @@ public class FragmentProfile extends Fragment {
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), FirstUploadingPage.class);
                 startActivity(intent);
+                Animatoo.INSTANCE.animateZoom(getContext());
             }
         });
 
@@ -87,7 +89,6 @@ public class FragmentProfile extends Fragment {
                 // Somewhere in your fragment code
                 String facebookPageUrl = "https://www.facebook.com/13laem/";
                 openFacebookPage(facebookPageUrl);
-
             }
         });
         //icon discord

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.R;
 import com.example.myapplication.mywaitingbid.WaitingBid;
 
@@ -38,6 +39,7 @@ public class PlaceBidSuccessfully extends AppCompatActivity {
                 intent.putExtra("InfoInfo3",numETH);
                 intent.putExtra("InfoInfo4",expirationDate);
                 startActivity(intent);
+                Animatoo.INSTANCE.animateSlideLeft(PlaceBidSuccessfully.this);
             }
         });
     }

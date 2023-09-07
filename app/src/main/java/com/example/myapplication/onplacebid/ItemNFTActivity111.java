@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.R;
 
 public class ItemNFTActivity111 extends AppCompatActivity {
@@ -34,6 +35,7 @@ public class ItemNFTActivity111 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent1 = new Intent(ItemNFTActivity111.this, KarafuruProfile.class);
                 startActivity(intent1);
+                Animatoo.INSTANCE.animateSlideDown(ItemNFTActivity111.this);
             }
         });
 
@@ -57,6 +59,8 @@ public class ItemNFTActivity111 extends AppCompatActivity {
                 intent3.putExtra("NFT_ImageView_Item_FromActivity111",id_img);
                 intent3.putExtra("NFT_TextView_Item_FromActivity111",img_name);
                 startActivity(intent3);
+                Animatoo.INSTANCE.animateSlideLeft(ItemNFTActivity111.this);
+
             }
         });
 

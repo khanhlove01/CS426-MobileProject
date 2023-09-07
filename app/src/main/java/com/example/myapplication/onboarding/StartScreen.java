@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.R;
 
 public class StartScreen extends AppCompatActivity {
@@ -22,6 +23,8 @@ public class StartScreen extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(StartScreen.this,ConnectWithWallet.class);
                 startActivity(intent);
+                Animatoo.INSTANCE.animateShrink(StartScreen.this);
+
             }
         });
     }

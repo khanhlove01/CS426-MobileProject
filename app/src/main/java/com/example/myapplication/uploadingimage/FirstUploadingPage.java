@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.R;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -46,6 +47,7 @@ public class FirstUploadingPage extends AppCompatActivity {
                 System.out.println(imageUriUri);
                 intent.putExtra("imageName",textInputEditText.getText().toString());
                 startActivity(intent);
+                Animatoo.INSTANCE.animateSlideLeft(FirstUploadingPage.this);
             }
         });
     }

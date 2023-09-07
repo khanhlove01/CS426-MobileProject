@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.AppController;
 import com.example.myapplication.FragmentHome;
 import com.example.myapplication.MainActivity;
@@ -61,6 +62,7 @@ public class WaitingBid extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(WaitingBid.this, MainActivity.class);
                 startActivity(intent);
+                Animatoo.INSTANCE.animateSlideUp(WaitingBid.this);
             }
         });
     }

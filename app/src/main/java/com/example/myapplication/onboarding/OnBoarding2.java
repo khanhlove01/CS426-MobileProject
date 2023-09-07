@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.R;
 
 public class OnBoarding2 extends AppCompatActivity {
@@ -22,6 +23,7 @@ public class OnBoarding2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(OnBoarding2.this,OnBoarding3.class);
                 startActivity(intent);
+                Animatoo.INSTANCE.animateSlideLeft(OnBoarding2.this);
             }
         });
     }

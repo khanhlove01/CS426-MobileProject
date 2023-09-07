@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.R;
 
 import java.util.ArrayList;
@@ -104,8 +105,8 @@ public class BidDetailActivity extends AppCompatActivity {
                 newIntent.putExtra("Info3",numETH1);
 
                 newIntent.putExtra("Info4",selectedItem[0]);
-
                 startActivity(newIntent);
+                Animatoo.INSTANCE.animateSlideLeft(BidDetailActivity.this);
             }
         });
 

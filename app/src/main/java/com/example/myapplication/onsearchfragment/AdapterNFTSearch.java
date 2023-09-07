@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.AppController;
 import com.example.myapplication.R;
 import com.example.myapplication.onhomefragment.AdapterArtHome;
@@ -64,6 +65,7 @@ public class AdapterNFTSearch extends RecyclerView.Adapter<AdapterNFTSearch.NFTS
         intent.putExtra("NFT_Image_Item_FromSearch",nftHome.getNft_home());
         intent.putExtra("NFT_Image_Name_FromSearch",nftHome.getNft_name());
         context.startActivity(intent);
+        Animatoo.INSTANCE.animateSlideUp(context);
     }
 
     @Override

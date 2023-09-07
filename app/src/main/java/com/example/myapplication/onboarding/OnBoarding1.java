@@ -2,11 +2,13 @@ package com.example.myapplication.onboarding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.R;
 
 public class OnBoarding1 extends AppCompatActivity {
@@ -22,6 +24,7 @@ public class OnBoarding1 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(OnBoarding1.this,OnBoarding2.class);
                 startActivity(intent);
+                Animatoo.INSTANCE.animateSlideLeft(OnBoarding1.this);
             }
         });
 

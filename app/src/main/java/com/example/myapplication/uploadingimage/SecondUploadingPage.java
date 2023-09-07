@@ -16,6 +16,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.AppController;
 import com.example.myapplication.R;
 import com.example.myapplication.onprofilefragment.NFTOfferMadeInfo;
@@ -112,6 +113,7 @@ public class SecondUploadingPage extends AppCompatActivity {
                 intent.putExtra("numSupplyItemsFromSecondToThird",numSupplyItems);
                 intent.putExtra("expirationDateFromSecondToThird",expirationDate);
                 startActivity(intent);
+                Animatoo.INSTANCE.animateSlideLeft(SecondUploadingPage.this);
             }
         });
 

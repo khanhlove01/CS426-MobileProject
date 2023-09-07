@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.R;
 
 public class ConnectWithWallet extends AppCompatActivity {
@@ -42,6 +43,7 @@ public class ConnectWithWallet extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ConnectWithWallet.this,WellcomeActivity.class);
                 startActivity(intent);
+                Animatoo.INSTANCE.animateShrink(ConnectWithWallet.this);
             }
         });
     }

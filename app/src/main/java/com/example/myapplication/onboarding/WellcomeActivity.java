@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.example.myapplication.MainActivity;
 import com.example.myapplication.R;
 
@@ -22,6 +23,7 @@ public class WellcomeActivity extends AppCompatActivity {
             public void run() {
                 Intent mainIntent = new Intent(WellcomeActivity.this, MainActivity.class); // Change MainActivity to your main activity
                 startActivity(mainIntent);
+                Animatoo.INSTANCE.animateShrink(WellcomeActivity.this);
                 finish();
             }
         }, SPLASH_TIMEOUT);
